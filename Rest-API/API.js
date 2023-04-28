@@ -60,8 +60,7 @@ function display(data) {
       }
     })
       .then(response => response.json())
-      .then(json => {
-        display([json])
+      .then(json => { display([json]) 
         console.log(json.id)
       });
       createPostBtn.addEventListener("click", () => {
